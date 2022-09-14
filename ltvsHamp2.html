@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính bình phương số bất kì được nhập, gọi hàm được xây dựng-->
+<input type="text" id="bPhuong">
+<button onclick="tinh()">Nhấn</button>
+<p id="ketQ"></p>
+<script>
+  function tinh(){
+    let a = document.getElementById('bPhuong').value;
+    let b = a*a
+    document.getElementById('ketQ').innerText = b
+  }
+</script>
+<!--Gọi hàm tính chu vi và diện tích hình tròn-->
+<!--<input type="text" id="banKinh">-->
+<!--<button onclick="tinh()">Tính</button>-->
+<!--<p id="ketQ"></p>-->
+<!--<script>-->
+<!--  function tinh(){-->
+<!--    let a = document.getElementById('banKinh').value;-->
+<!--    let chuVi = 3.14*2*a;-->
+<!--    let dienTich = 3.14*2*2;-->
+<!--    document.getElementById('ketQ').innerText = "Chu vi hình tròn: "+ chuVi + " Diện tích hình tròn: "+ dienTich;-->
+<!--  }-->
+<!--</script>-->
+<!--Tính giai thừa số nguyên bất kì-->
+<!--<input type="text" id="soNguyen">-->
+<!--<button onclick="tinh()">Tính</button>-->
+<!--<p id="ketQ"></p>-->
+<!--<script>-->
+<!--  function tinh(){-->
+<!--    let a = document.getElementById('soNguyen').value;-->
+<!--    for (let i = a-1; i >0 ; i&#45;&#45;) {-->
+<!--      a*=i;-->
+<!--    }-->
+<!--    document.getElementById('ketQ').innerText = a-->
+<!--  }-->
+<!--</script>-->
+<!--Kiểm tra số nguyên dương-->
+<!--<script>-->
+<!--  let a= +prompt('Nhập số:')-->
+<!--  function kiemTraSo(){-->
+<!--    if (a>0 && Number.isInteger(a))-->
+<!--      alert(true)-->
+<!--    else-->
+<!--      alert(false)}-->
+<!--  kiemTraSo()-->
+<!--</script>-->
+<!--Kiểm tra kí tự xem có phải số k-->
+<!--<input type="text" id="sOk">-->
+<!--<button id onclick="kiemTr()">Kiểm tra</button>-->
+<!--<script>-->
+<!--  function kiemTr(){-->
+<!--    let a = parseInt(document.getElementById('sOk').value)-->
+<!--    console.log(a)-->
+<!--  }-->
+<!--</script>-->
+<!--Bài tập thêm-->
+<!--<script>-->
+<!--  function locChuoi(arr){-->
+<!--    var newArr = []-->
+<!--    for (let i = 0; i < arr.length; i++) {-->
+<!--      if (newArr.indexOf(arr[i])=== -1){-->
+<!--        newArr.push(arr[i])-->
+<!--      }-->
+<!--    }-->
+<!--    return newArr-->
+<!--  }-->
+<!--  alert(locChuoi([1,3,1,5,5,9,5,4,4,3]))-->
+<!--</script>-->
+</body>
+</html>

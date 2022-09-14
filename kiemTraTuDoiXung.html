@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = prompt('Nhập từ vào')
+  let isarr = arr.split("");
+  let newarr = [];
+  let check;
+  for (let i = 0; i < isarr.length; i++) {
+    newarr.unshift(isarr[i])
+    console.log('i===========', i)
+    console.log('newarr=========', newarr)
+  }
+  function checPalinDrome() {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === newarr[i]) {
+        check = true;
+      } else {
+        check = false;
+        break;
+      }
+    }
+    if (check) {
+      document.write(arr + ' là palindrome')
+    } else {
+      document.write(arr + ' Không phải là palindrome')
+    }
+  }
+  checPalindrome()
+</script>
+
+</body>
+</html>

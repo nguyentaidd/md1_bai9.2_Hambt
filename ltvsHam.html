@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển-->
+<!--thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số-->
+<!--thứ hai, trả về tổng của hai tham số.-->
+<!--<input type="text" id="n1">-->
+<!--<input type="text" id="n2">-->
+<!--<button onclick="thamSo()">Chạy</button>-->
+<!--<script>-->
+<!--    function thamSo(a,b){-->
+<!--        var a = document.getElementById('n1').value;-->
+<!--        var b = document.getElementById("n2").value;-->
+<!--        sum = a+b;-->
+<!--        if (a>b){-->
+<!--            alert('Thông báo!')-->
+<!--        } if (a<=b){-->
+<!--            console.log('sum la:' +sum)-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi "Xin chao"-->
+<!--<script>-->
+<!--  xinChao = function (){-->
+<!--      return 'Xin chao!'-->
+<!--  }-->
+<!--  alert(xinChao())-->
+<!--</script>-->
+<!--Thêm các hàm alert() vào những vị trí thích hợp trong đoạn mã sau để bạn có thể nhìn-->
+<!--thấy giá trị của biến result trước và sau lời gọi hàm-->
+<!--<script>-->
+<!--    function addNumbers() {-->
+<!--        firstNum = 4;-->
+<!--        secondNum = 8;-->
+<!--        result = firstNum + secondNum;-->
+<!--        return result;-->
+<!--    }-->
+<!--    result = 0;-->
+<!--    alert(result)-->
+<!--    result = addNumbers();-->
+<!--    alert(result);-->
+<!--</script>-->
+<!--Tìm sao trong chuỗi phù hợp với chòm sao tương ứng (fix by A.H)-->
+<input id="nhSao">
+<button onclick="check()">Tìm</button>
+<p id="ketQ"></p>
+<script>
+    let s = ['Polaris', 'Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus']
+    let cs = ['Ursa Minor','Tarurus', 'Cygnus', 'Lyra','Aquila','Ursa Major','Leo']
+    function check(){
+        let nhapp = document.getElementById('nhSao').value; //lấy giá trị ng dùng nhập
+        let check=s.indexOf(nhapp);//tìm phần tử xem có trong mảng k, có thì trả về giá trị
+   if (check==-1){
+       document.getElementById('ketQ').innerHTML="Không tìm thấy!"
+   } //nếu check k thuộc các phần tử trong mảng -> k tim thay
+else {
+       document.getElementById('ketQ').innerHTML=cs[check];
+    //còn lại ra mảng cs phù hợp với các mảng tương ứng (trả về giá trị)
+   }
+    }
+</script>
+
+
+
+</body>
+</html>
